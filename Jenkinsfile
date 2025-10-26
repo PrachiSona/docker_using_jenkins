@@ -10,7 +10,6 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', url: 'https://github.com/PrachiSona/docker_using_jenkins.git'
-
             }
         }
 
@@ -32,7 +31,6 @@ pipeline {
         }
         failure {
             echo '❌ Build failed. Check logs.'
-        }
-    }
+        }
+    }
 }
-
