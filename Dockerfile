@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Compile Java source code
-RUN javac src/Main.java
+RUN javac -encoding UTF-8 src/Main.java
 
 # Run the Java program
-CMD ["java", "-cp", "src", "Main"]
+CMD ["java", "-cp", "src", "Main"]
