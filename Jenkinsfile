@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = 'docker-hub-creds'
-        IMAGE_NAME = 'rushikamane/assign_11'
+        DOCKERHUB_CREDENTIALS = 'docker_hub_credential'
+        IMAGE_NAME = 'prachisonavane/assign_11'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/RushikaMane/docker_jenkins.git'
+                git branch: 'main', url: 'https://github.com/PrachiSona/docker_using_jenkins.git'
 
             }
         }
@@ -35,3 +35,4 @@ pipeline {
         }
     }
 }
+
